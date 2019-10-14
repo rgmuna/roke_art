@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="rokeApp" ui-router-styles>
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -8,20 +8,17 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js" integrity="sha256-47AQCzX6dqzjicKe4PabaBJtLnWffl34LU9WJUulNog=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.23/angular-ui-router.js" integrity="sha256-tUk3dkdAhTJciptoGlnQ39zDSTVml94l1SLPlzKDovM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js" integrity="sha256-6vbKDGwy9JmzGKxxeypGzCjyOmACDtgheaOQT6ZVafA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <!-- JS Files -->
+    <script src="/js/app.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/routes.js"></script>
+
     <title>Roke Muna Art</title>
 
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
@@ -40,7 +37,27 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+
+    <div ng-controller="ApplicationController" class="roke-container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a ui-sref="home" ui-sref-active="activeState">Home</a>
+          </li>
+          <li>
+            <a ui-sref="gallery" ui-sref-active="activeState">Gallery</a>
+          </li>
+          <li>
+            <a ui-sref="about" ui-sref-active="activeState">About</a>
+          </li>
+          <li>
+            <a ui-sref="contact" ui-sref-active="activeState">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div ui-view></div>
+    </div>
 
   </body>
 </html>

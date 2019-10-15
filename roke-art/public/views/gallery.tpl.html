@@ -1,3 +1,18 @@
-<div>
-  alskfjaslkfjaskljflkasj
+<div class="about">
+  <h1 class="page-title">Gallery</h1>
+  <div class="image-column column-one">
+    <div ng-repeat="painting in model.paintings" ng-if="painting.column === 1">
+      <img src="{{painting.image}}" alt="">
+    </div>
+  </div>
+  <div class="image-column column-two">
+    <div ng-repeat="painting in model.paintings" ng-if="painting.column === 2">
+      <img src="{{painting.image}}" alt="">
+    </div>
+  </div>
+  <div class="image-column column-three">
+    <div ng-repeat="painting in model.paintings" ng-if="painting.column === 3">
+      <img src="{{painting.image}}" alt="">
+    </div>
+  </div>
 </div>

@@ -1,144 +1,144 @@
 rokeApp.factory('GalleryData', function() {
   var galleryData = {
     0 : {
-      path  : "/assets/img/fild_of_daisies.JPG",
+      image : "/assets/img/field_of_flowers.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     1 : {
-      path  : "/assets/img/arnold.JPG",
+      image : "/assets/img/arnold.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     2 : {
-      path  : "/assets/img/beachside_church.JPG",
+      image : "/assets/img/beachside_church.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     3 : {
-      path  : "/assets/img/beetlenut.JPG",
+      image : "/assets/img/beetlenut.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     4 : {
-      path  : "/assets/img/birds.JPG",
+      image : "/assets/img/birds.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     5 : {
-      path  : "/assets/img/blue_house.JPG",
+      image : "/assets/img/blue_house.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     6 : {
-      path  : "/assets/img/canoers.JPG",
+      image : "/assets/img/canoers.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     7 : {
-      path  : "/assets/img/caribou_boy.JPG",
+      image : "/assets/img/caribou_boy.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     8 : {
-      path  : "/assets/img/caribou.JPG",
+      image : "/assets/img/caribou.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     9 : {
-      path  : "/assets/img/children.JPG",
+      image : "/assets/img/children.JPG",
       name  : "Abstract Caribou",
       column: 1
     },
     10 : {
-      path  : "/assets/img/colorful_caribou.JPG",
+      image : "/assets/img/colorful_caribou.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     11 : {
-      path  : "/assets/img/crab.JPG",
+      image : "/assets/img/crab.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     12 : {
-      path  : "/assets/img/crucifixion.JPG",
+      image : "/assets/img/crucifixion.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     13 : {
-      path  : "/assets/img/fall_leaves.JPG",
+      image : "/assets/img/fall_leaves.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     14 : {
-      path  : "/assets/img/field_of_daisies.JPG",
+      image : "/assets/img/field_of_daisies.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     15 : {
-      path  : "/assets/img/field_of_flowers.JPG",
+      image : "/assets/img/field_of_flowers.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     16 : {
-      path  : "/assets/img/fields.JPG",
+      image : "/assets/img/fields.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     17 : {
-      path  : "/assets/img/first_national_bank.JPG",
+      image : "/assets/img/first_national_bank.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     18 : {
-      path  : "/assets/img/flower_1.JPG",
+      image : "/assets/img/flower_1.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 2
     },
     19 : {
-      path  : "/assets/img/flower_2.JPG",
+      image : "/assets/img/flower_2.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     20 : {
-      path  : "/assets/img/flower_3.JPG",
+      image : "/assets/img/flower_3.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     21 : {
-      path  : "/assets/img/flower_4.JPG",
+      image : "/assets/img/flower_4.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     22 : {
-      path  : "/assets/img/flower_5.JPG",
+      image : "/assets/img/flower_5.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     23 : {
-      path  : "/assets/img/flower_6.JPG",
+      image : "/assets/img/flower_6.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     24 : {
-      path  : "/assets/img/flower_7.JPG",
+      image : "/assets/img/flower_7.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     25 : {
-      path  : "/assets/img/flower_8.JPG",
+      image : "/assets/img/flower_8.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     26 : {
-      path  : "/assets/img/hamburger_hut.JPG",
+      image : "/assets/img/hamburger_hut.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     },
     27 : {
-      path  : "/assets/img/harbor.JPG",
+      image : "/assets/img/harbor.JPG",
       name  : "Abstract Caribou",
-      column: 1
+      column: 3
     }
   }
 

@@ -20,7 +20,7 @@ rokeApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider
     name       : 'gallery',
     url        : '/gallery',
     templateUrl: '/views/gallery.tpl.html',
-    // controller : 'GalleryController'
+    controller : 'GalleryController'
   };
 
   var contactState = {

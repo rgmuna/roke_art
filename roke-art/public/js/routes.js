@@ -6,7 +6,7 @@ rokeApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider
     name       : 'home',
     url        : '/home',
     templateUrl: '/views/home.tpl.html',
-    // controller : 'HomeController'
+    controller : 'HomeController'
   };
 
   var aboutState = {

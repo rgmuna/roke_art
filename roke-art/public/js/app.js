@@ -1,8 +1,6 @@
 var rokeApp = angular.module('rokeApp', [
   'ui.bootstrap',
-  'ui.router',
-  'ngAnimate',
-  'ngSanitize'
+  'ui.router'
 ])
 
 rokeApp.controller('ApplicationController', ['$scope', '$rootScope', function($scope, $rootScope) {

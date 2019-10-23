@@ -2,17 +2,23 @@
   <h1 class="page-title">Gallery</h1>
   <div class="image-column column-one">
     <div ng-repeat="painting in model.paintings" ng-if="painting.column === 1">
-      <img ng-src="{{painting.image}}" alt="">
+      <a ng-click="zoomIn(painting)">
+        <img class="painting" ng-src="{{painting.image}}" alt="">
+      </a>
     </div>
   </div>
   <div class="image-column column-two">
     <div ng-repeat="painting in model.paintings" ng-if="painting.column === 2">
-      <img ng-src="{{painting.image}}" alt="">
+      <a ng-click="zoomIn(painting)">
+        <img class="painting" ng-src="{{painting.image}}" alt="">
+      </a>
     </div>
   </div>
   <div class="image-column column-three">
     <div ng-repeat="painting in model.paintings" ng-if="painting.column === 3">
-      <img ng-src="{{painting.image}}" alt="">
+      <a ng-click="zoomIn(painting)">
+        <img class="painting" ng-src="{{painting.image}}" alt="">
+      </a>
     </div>
   </div>
 </div>

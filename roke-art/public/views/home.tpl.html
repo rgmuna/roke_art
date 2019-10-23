@@ -1,10 +1,37 @@
-<div class="about">
-  <h1 class="page-title">Home</h1>
-  <!-- <div style="height: 305px">
-    <div uib-carousel active="model.active" interval="model.carouselInterval" no-wrap="noWrapSlides">
-      <div uib-slide ng-repeat="paintings in model.carouselPaintings track by paintings.img" index="slide.id">
-        <img ng-src="{{paintings.image}}" style="margin:auto;">
-      </div>
+<div class="home">
+  <div class="thumbnail-container">
+
+    <div class="thumbnail" >
+      <a ui-sref="about" ui-sref-active="activeState">
+        <div class="thumbnail-one">
+          <div class="thumbnail-one-overlay"></div>
+          <div class="thumbnail-title one">
+            About
+          </div>
+        </div>
+      </a>
     </div>
-  </div> -->
+
+    <div class="thumbnail">
+      <a ui-sref="gallery" ui-sref-active="activeState">
+        <div class="thumbnail-two">
+          <div class="thumbnail-title two">
+            Gallery
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="thumbnail">
+      <a ui-sref="contact" ui-sref-active="activeState">
+        <div class="thumbnail-three">
+          <div class="thumbnail-three-overlay"></div>
+          <div class="thumbnail-title three">
+            Contact
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
 </div>

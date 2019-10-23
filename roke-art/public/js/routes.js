@@ -3,31 +3,63 @@ rokeApp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider
   $urlRouterProvider.otherwise('/home');
 
   var homeState = {
-    name       : 'home',
-    url        : '/home',
-    templateUrl: '/views/home.tpl.html',
-    controller : 'HomeController'
+    name : 'home',
+    url  : '/home',
+    views: {
+      header  : {
+        templateUrl: '/views/header-main.tpl.html',
+        controller : 'HeaderController'
+      },
+      content : {
+        templateUrl: '/views/home.tpl.html',
+        controller : 'HomeController'
+      }
+    }
   };
 
   var aboutState = {
-    name       : 'about',
-    url        : '/about',
-    templateUrl: '/views/about.tpl.html',
-    // controller : 'AboutController'
+    name: 'about',
+    url: '/about',
+    views: {
+      header: {
+        templateUrl: '/views/header-other.tpl.html',
+        controller: 'HeaderController'
+      },
+      content: {
+        templateUrl: '/views/about.tpl.html',
+        controller: 'AboutController'
+      }
+    }
   };
 
   var galleryState = {
-    name       : 'gallery',
-    url        : '/gallery',
-    templateUrl: '/views/gallery.tpl.html',
-    controller : 'GalleryController'
+    name : 'gallery',
+    url  : '/gallery',
+    views: {
+      header: {
+        templateUrl: '/views/header-other.tpl.html',
+        controller : 'HeaderController'
+      },
+      content: {
+        templateUrl: '/views/gallery.tpl.html',
+        controller : 'GalleryController'
+      }
+    }
   };
 
   var contactState = {
-    name       : 'contact',
-    url        : '/contact',
-    templateUrl: '/views/contact.tpl.html',
-    // controller : 'ContactController'
+    name: 'contact',
+    url: '/contact',
+    views: {
+      header: {
+        templateUrl: '/views/header-other.tpl.html',
+        controller: 'HeaderController'
+      },
+      content: {
+        templateUrl: '/views/contact.tpl.html',
+        controller: 'contactController'
+      }
+    }
   };
 
 

@@ -13,6 +13,7 @@ body {
 .content-container {
   width: 1200px;
   margin: auto;
+  min-height: 100vh;
 }
 
 .title-container {
@@ -64,7 +65,7 @@ Nav Bar
 }
 
 .header-title span {
-  border-bottom: 20px solid rgb(247,199,98);
+  border-bottom: 20px solid #00cde2;
 }
 
 .navigation ul li {
@@ -136,6 +137,10 @@ Nav Bar
   padding: 20px;
 }
 
+.thumbnail-inner:hover {
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+
 .thumbnail-one-overlay {
   width: 100%;
   height: 100%;
@@ -143,6 +148,15 @@ Nav Bar
   top: 0;
   left: 0;
   background: rgba(247,199,98, 0.70);
+}
+
+.thumbnail-two-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(	0, 205, 226, 0.7);
 }
 
 .thumbnail-three-overlay {
@@ -156,7 +170,7 @@ Nav Bar
 
 .thumbnail-one {
   height: 200px;
-  background: url('/assets/img/flower_2.JPG');
+  background: url('/assets/img/flower_1.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -164,7 +178,7 @@ Nav Bar
 
 .thumbnail-two {
   height: 200px;
-  background: url('/assets/img/flower_1.JPG');
+  background: url('/assets/img/flower_2.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -195,13 +209,11 @@ Nav Bar
 }
 
 .thumbnail-title.two {
-  background-color: rgba(247,199,98, 0.7);
-  font-weight: 400;
-  color: black;
+  color: white;
 }
 
 .thumbnail-title.three {
-  color: white;
+  color: rgba(247,199,98);
 }
 
 /*
@@ -279,12 +291,73 @@ Nav Bar
   cursor: pointer;
 }
 
+/*
+  Contact Us
+*/
+
+.contact img {
+  height: 500px;
+  margin-left: 100px;
+  border: 4px solid #00cde2;
+  padding: 10px;
+}
+
+.email-container {
+  display: inline;
+  margin-left: -170px;
+  padding: 60px 100px;
+  background-color: rgb(247,199,98);
+}
+
+.contact a {
+  color: black;
+}
+
+.email-inner {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.email-inner a {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*
+  Footer
+*/
+
 .footer {
   width: 100%;
-  height: 50px;
   background-color: rgb(247,199,98);
   margin-top: 100px;
+  padding: 12px;
 }
+
+.footer-home {
+  color: white;
+  margin-left: 20px;
+}
+
+.footer ul {
+  margin: 0;
+  float: right;
+}
+
+.footer ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+
+.footer ul li a{
+  color: white;
+  font-size: 12px;
+}
+
 
 
 @media (max-width: 768px) {
